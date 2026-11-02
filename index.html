@@ -6,9 +6,9 @@
 <title>OLOGBO LUXURY</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#0f0e0d;color:#f5e6c8;font-family:Arial,sans-serif}
+body{background:#0f0e0d;color:#f5e6c8;font-family:Arial}
 .header{text-align:center;padding:60px 20px 40px}
-.header h1{font-family:serif;font-size:48px;letter-spacing:8px;color:#f5e6c8}
+.header h1{font-family:serif;font-size:48px;letter-spacing:8px}
 .header p{letter-spacing:8px;color:#d4af37;margin-top:10px;font-size:14px}
 .sub{font-size:10px!important;color:#666!important;letter-spacing:4px!important;margin-top:20px!important}
 .product{max-width:900px;margin:0 auto;padding:30px;text-align:center;border-top:1px solid #222}
@@ -27,17 +27,44 @@ td{padding:10px;border-bottom:1px solid #222;color:#ccc}
 </style>
 </head>
 <body>
-
 <div class="header">
 <h1>OLOGBO</h1>
 <p>LUXURY</p>
 <p class="sub">SIMPLE • UNIQUE • LUXURY • LAGOS</p>
 </div>
-
 <div class="product">
 <h2>Essential Collection</h2>
 <p class="price">₦45,000</p>
 <p class="desc">Unisex Luxury • Crafted in Lagos • Premium Cotton</p>
 <button class="btn btn-outline" onclick="document.getElementById('sizeGuide').style.display='block'">SIZE GUIDE - VIEW CHART</button>
 <br>
-<button class="btn" onclick="window.open('https://wa.me/
+<button class="btn" onclick="window.open('https://wa.me/2349157361533','_blank')">SHOP ON WHATSAPP</button>
+</div>
+<div id="sizeGuide">
+<div class="box">
+<span class="close" onclick="document.getElementById('sizeGuide').style.display='none'">&times;</span>
+<h2 style="text-align:center;font-family:serif;letter-spacing:4px">SIZE GUIDE</h2>
+<p style="text-align:center;color:#d4af37;margin:10px 0;font-size:12px;letter-spacing:3px">OLOGO LUXURY - FIND YOUR PERFECT FIT</p>
+<h3 style="margin:20px 0 10px;color:#d4af37">MEN'S TOPS</h3>
+<table>
+<tr><th>SIZE</th><th>CHEST</th><th>LENGTH</th><th>FITS</th></tr>
+<tr><td class="gold">S</td><td>38"</td><td>27"</td><td>Small</td></tr>
+<tr><td class="gold">M</td><td>40"</td><td>28"</td><td>Medium</td></tr>
+<tr><td class="gold">L</td><td>42"</td><td>29"</td><td>Large</td></tr>
+<tr><td class="gold">XL</td><td>44"</td><td>30"</td><td>X-Large</td></tr>
+<tr><td class="gold">XXL</td><td>46"</td><td>31"</td><td>2X Large</td></tr>
+</table>
+<h3 style="margin:20px 0 10px;color:#d4af37">WOMEN'S TOPS</h3>
+<table>
+<tr><th>SIZE</th><th>BUST</th><th>LENGTH</th><th>FITS</th></tr>
+<tr><td class="gold">S</td><td>36"</td><td>25"</td><td>8-10</td></tr>
+<tr><td class="gold">M</td><td>38"</td><td>26"</td><td>12-14</td></tr>
+<tr><td class="gold">L</td><td>40"</td><td>27"</td><td>16-18</td></tr>
+<tr><td class="gold">XL</td><td>42"</td><td>28"</td><td>18-20</td></tr>
+</table>
+<p style="text-align:center;color:#888;margin:25px 0 10px;font-size:12px">Not sure? Send your measurements on WhatsApp and we will recommend your size.</p>
+<button class="btn" onclick="document.getElementById('sizeGuide').style.display='none'">CLOSE GUIDE</button>
+</div>
+</div>
+</body>
+</html>
