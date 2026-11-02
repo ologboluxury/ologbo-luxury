@@ -1,70 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLOGBO LUXURY</title>
+<meta name="description" content="Discover OLOGBO LUXURY — distinctive fashion, elegant designs and bespoke tailoring.">
+<title>OLOGBO LUXURY | Wear Your Distinction</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0f0e0d;color:#f5e6c8;font-family:Arial}
-.header{text-align:center;padding:60px 20px 40px}
-.header h1{font-family:serif;font-size:48px;letter-spacing:8px}
-.header p{letter-spacing:8px;color:#d4af37;margin-top:10px;font-size:14px}
-.sub{font-size:10px!important;color:#666!important;letter-spacing:4px!important;margin-top:20px!important}
-.product{max-width:900px;margin:0 auto;padding:30px;text-align:center;border-top:1px solid #222}
-.product h2{font-family:serif;font-size:32px;margin-bottom:15px}
-.price{color:#d4af37;font-size:28px;margin:15px 0}
-.desc{color:#888;margin:20px 0;font-size:14px}
-.btn{background:#d4af37;color:#000;padding:18px 30px;border:none;font-weight:bold;letter-spacing:3px;width:100%;max-width:400px;margin:10px;cursor:pointer;font-size:14px}
-.btn-outline{background:transparent;color:#f5e6c8;border:1px solid #d4af37}
-#sizeGuide{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.96);z-index:9999;display:none;overflow:auto;padding:15px}
-.box{max-width:850px;margin:20px auto;background:#141210;padding:25px;border:1px solid #d4af37;position:relative}
-.close{position:absolute;top:10px;right:20px;font-size:32px;color:#f5e6c8;cursor:pointer}
-table{width:100%;border-collapse:collapse;margin:15px 0;font-size:13px}
-th{color:#d4af37;text-align:left;padding:10px;border-bottom:1px solid #333}
-td{padding:10px;border-bottom:1px solid #222;color:#ccc}
-.gold{color:#d4af37}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#101010;color:#f7f2e9;font-family:Arial,sans-serif}
+header{padding:22px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #40372a}
+.brand{font-family:Georgia,serif;font-size:25px;letter-spacing:3px;color:#d4af37}
+.brand small{display:block;font-family:Arial,sans-serif;font-size:10px;letter-spacing:6px;text-align:center;color:#f7f2e9;margin-top:5px}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:#f7f2e9;text-decoration:none;font-size:13px}
+.hero{padding:90px 7%;text-align:center;background:linear-gradient(135deg,#171717,#302719,#101010)}
+.eyebrow{color:#d4af37;letter-spacing:5px;font-size:12px}
+h1{font-family:Georgia,serif;font-size:clamp(38px,7vw,72px);font-weight:normal;margin:22px 0}
+.hero p{color:#d4cabb;line-height:1.8;max-width:600px;margin:0 auto 28px}
+.button{display:inline-block;background:#d4af37;color:#101010;text-decoration:none;padding:14px 25px;font-weight:bold;margin:5px}
+section{padding:65px 6%}
+.section-heading{text-align:center;margin-bottom:35px}
+.section-heading h2{font-family:Georgia,serif;font-size:34px;font-weight:normal;margin-bottom:12px}
+.section-heading p{color:#bdb3a4;line-height:1.7}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:#1c1c1c;border:1px solid #393127;overflow:hidden}
+.card img{width:100%;height:360px;object-fit:cover;display:block}
+.card h3{font-family:Georgia,serif;font-size:19px;font-weight:normal;padding:15px 15px 5px}
+.card p{color:#c3b8a8;font-size:13px;padding:0 15px 18px}
+.about{text-align:center;background:#f7f2e9;color:#17130e}
+.about p{max-width:720px;margin:18px auto;line-height:1.9}
+.contact{text-align:center}
+.contact p{color:#c3b8a8;line-height:2;margin:15px 0}
+footer{text-align:center;padding:25px;border-top:1px solid #40372a;color:#c3b8a8;font-size:12px}
+@media(max-width:700px){
+header{flex-direction:column}
+nav{justify-content:center;gap:15px}
+.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card img{height:250px}
+.card h3{font-size:16px}
+section{padding:45px 4%}
+}
+@media(max-width:420px){
+.gallery{grid-template-columns:1fr}
+.card img{height:auto;max-height:480px;object-fit:contain;background:#171717}
+}
 </style>
 </head>
+
 <body>
-<div class="header">
-<h1>OLOGBO</h1>
-<p>LUXURY</p>
-<p class="sub">SIMPLE • UNIQUE • LUXURY • LAGOS</p>
-</div>
-<div class="product">
-<h2>Essential Collection</h2>
-<p class="price">₦45,000</p>
-<p class="desc">Unisex Luxury • Crafted in Lagos • Premium Cotton</p>
-<button class="btn btn-outline" onclick="document.getElementById('sizeGuide').style.display='block'">SIZE GUIDE - VIEW CHART</button>
-<br>
-<button class="btn" onclick="window.open('https://wa.me/2349157361533','_blank')">SHOP ON WHATSAPP</button>
-</div>
-<div id="sizeGuide">
-<div class="box">
-<span class="close" onclick="document.getElementById('sizeGuide').style.display='none'">&times;</span>
-<h2 style="text-align:center;font-family:serif;letter-spacing:4px">SIZE GUIDE</h2>
-<p style="text-align:center;color:#d4af37;margin:10px 0;font-size:12px;letter-spacing:3px">OLOGO LUXURY - FIND YOUR PERFECT FIT</p>
-<h3 style="margin:20px 0 10px;color:#d4af37">MEN'S TOPS</h3>
-<table>
-<tr><th>SIZE</th><th>CHEST</th><th>LENGTH</th><th>FITS</th></tr>
-<tr><td class="gold">S</td><td>38"</td><td>27"</td><td>Small</td></tr>
-<tr><td class="gold">M</td><td>40"</td><td>28"</td><td>Medium</td></tr>
-<tr><td class="gold">L</td><td>42"</td><td>29"</td><td>Large</td></tr>
-<tr><td class="gold">XL</td><td>44"</td><td>30"</td><td>X-Large</td></tr>
-<tr><td class="gold">XXL</td><td>46"</td><td>31"</td><td>2X Large</td></tr>
-</table>
-<h3 style="margin:20px 0 10px;color:#d4af37">WOMEN'S TOPS</h3>
-<table>
-<tr><th>SIZE</th><th>BUST</th><th>LENGTH</th><th>FITS</th></tr>
-<tr><td class="gold">S</td><td>36"</td><td>25"</td><td>8-10</td></tr>
-<tr><td class="gold">M</td><td>38"</td><td>26"</td><td>12-14</td></tr>
-<tr><td class="gold">L</td><td>40"</td><td>27"</td><td>16-18</td></tr>
-<tr><td class="gold">XL</td><td>42"</td><td>28"</td><td>18-20</td></tr>
-</table>
-<p style="text-align:center;color:#888;margin:25px 0 10px;font-size:12px">Not sure? Send your measurements on WhatsApp and we will recommend your size.</p>
-<button class="btn" onclick="document.getElementById('sizeGuide').style.display='none'">CLOSE GUIDE</button>
-</div>
-</div>
+<header>
+  <a class="brand" href="#" style="text-decoration:none">
+    OLOGBO
+    <small>LUXURY</small>
+  </a>
+  <nav>
+    <a href="#collection">Collections</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="eyebrow">STYLE • CRAFTSMANSHIP • DISTINCTION</div>
+  <h1>Wear Your Distinction.</h1>
+  <p>Discover distinctive fashion, elegant silhouettes and expressive designs created for people who appreciate exceptional style.</p>
+  <a class="button" href="#collection">EXPLORE THE COLLECTION</a>
+  <a class="button" href="#contact" style="background:transparent;color:#d4af37;border:1px solid #d4af37">CONTACT US</a>
+</section>
+
+<section id="collection">
+  <div class="section-heading">
+    <h2>Our Collection</h2>
+    <p>Discover selected looks from OLOGBO LUXURY.</p>
+  </div>
+
+  <div class="gallery">
+    <article class="card">
+      <img src="01_blue_blazer.jpg" alt="Blue blazer design" loading="lazy">
+      <h3>Classic Blue Blazer</h3><p>Refined tailoring and timeless style.</p>
+    </article>
+    <article class="card">
+      <img src="02_leopard_set.jpg" alt="Leopard print outfit" loading="lazy">
+      <h3>Leopard Statement Set</h3><p>Bold style with a confident finish.</p>
+    </article>
+    <article class="card">
+      <img src="03_pink_wrap_front.jpg" alt="Pink wrap outfit front view" loading="lazy">
+      <h3>Pink Wrap Design</h3><p>Elegant lines and a graceful silhouette.</p>
+    </article>
+    <article class="card">
+      <img src="04_floral_dress_portrait.jpg" alt="Floral dress portrait" loading="lazy">
+      <h3>Floral Elegance</h3><p>Expressive prints for standout moments.</p>
+    </article>
+    <article class="card">
+      <img src="05_floral_dress_seated.jpg" alt="Floral dress seated view" loading="lazy">
+      <h3>Floral Signature Look</h3><p>Distinctive design with feminine elegance.</p>
+    </article>
+    <article class="card">
+      <img src="06_pink_wrap_smile.jpg" alt="Pink wrap outfit" loading="lazy">
+      <h3>Pink Wrap Collection</h3><p>Modern elegance with personality.</p>
+    </article>
+    <article class="card">
+      <img src="07_floral_dress_full.jpg" alt="Full view of floral dress" loading="lazy">
+      <h3>Full-Length Floral Look</h3><p>A striking look from every angle.</p>
+    </article>
+    <article class="card">
+      <img src="08_pink_wrap_seated.jpg" alt="Pink wrap design seated view" loading="lazy">
+      <h3>Contemporary Wrap</h3><p>Comfort and style in one design.</p>
+    </article>
+    <article class="card">
+      <img src="09_orange_print_dress.jpg" alt="Orange print dress" loading="lazy">
+      <h3>Orange Print Statement</h3><p>Vibrant colour and confident design.</p>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-heading"><h2>About OLOGBO LUXURY</h2></div>
+  <p>OLOGBO LUXURY celebrates individuality through thoughtful design, quality craftsmanship and distinctive fashion. Our vision is to create pieces that help every client express confidence and personal style.</p>
+  <p><strong>Wear Your Distinction.</strong></p>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-heading">
+    <h2>Let's Create Your Look</h2>
+    <p>Contact us for enquiries, custom tailoring and orders.</p>
+  </div>
+  <p>Email: ologboluxury@gmail.com</p>
+  <a class="button" href="https://wa.me/2349157361533">CHAT WITH US ON WHATSAPP</a>
+  <p>Instagram: @ologbo_luxury<br>TikTok: @ologbo_luxury</p>
+</section>
+</main>
+
+<footer>
+  © 2026 OLOGBO LUXURY. All rights reserved.
+</footer>
 </body>
 </html>
