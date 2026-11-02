@@ -6,37 +6,38 @@
 <title>OLOGBO LUXURY</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#0f0e0d;color:#f5e6c8;font-family:Arial}
-.header{text-align:center;padding:50px 20px}
-.header h1{font-family:serif;font-size:48px;letter-spacing:8px}
-.header p{letter-spacing:6px;color:#d4af37;margin-top:10px}
-.product{max-width:1000px;margin:40px auto;padding:20px;text-align:center}
-.price{color:#d4af37;font-size:26px;margin:20px}
-.btn{background:#d4af37;color:#000;padding:16px 32px;border:none;font-weight:bold;letter-spacing:2px;width:100%;max-width:400px;margin:10px;cursor:pointer}
+body{background:#0f0e0d;color:#f5e6c8;font-family:Arial,sans-serif}
+.header{text-align:center;padding:60px 20px 40px}
+.header h1{font-family:serif;font-size:48px;letter-spacing:8px;color:#f5e6c8}
+.header p{letter-spacing:8px;color:#d4af37;margin-top:10px;font-size:14px}
+.sub{font-size:10px!important;color:#666!important;letter-spacing:4px!important;margin-top:20px!important}
+.product{max-width:900px;margin:0 auto;padding:30px;text-align:center;border-top:1px solid #222}
+.product h2{font-family:serif;font-size:32px;margin-bottom:15px}
+.price{color:#d4af37;font-size:28px;margin:15px 0}
+.desc{color:#888;margin:20px 0;font-size:14px}
+.btn{background:#d4af37;color:#000;padding:18px 30px;border:none;font-weight:bold;letter-spacing:3px;width:100%;max-width:400px;margin:10px;cursor:pointer;font-size:14px}
 .btn-outline{background:transparent;color:#f5e6c8;border:1px solid #d4af37}
-#sizeGuideModal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:10px}
-.modal-box{max-width:900px;margin:20px auto;background:#0f0e0d;padding:15px;border:1px solid #d4af37;position:relative}
-.close{position:absolute;top:5px;right:15px;font-size:30px;color:#f5e6c8;cursor:pointer}
+#sizeGuide{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.96);z-index:9999;display:none;overflow:auto;padding:15px}
+.box{max-width:850px;margin:20px auto;background:#141210;padding:25px;border:1px solid #d4af37;position:relative}
+.close{position:absolute;top:10px;right:20px;font-size:32px;color:#f5e6c8;cursor:pointer}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:13px}
+th{color:#d4af37;text-align:left;padding:10px;border-bottom:1px solid #333}
+td{padding:10px;border-bottom:1px solid #222;color:#ccc}
+.gold{color:#d4af37}
 </style>
 </head>
 <body>
-<div class="header"><h1>OLOGBO</h1><p>L U X U R Y</p><p style="font-size:10px;color:#666;margin-top:15px">SIMPLE • UNIQUE • LUXURY</p></div>
+
+<div class="header">
+<h1>OLOGBO</h1>
+<p>LUXURY</p>
+<p class="sub">SIMPLE • UNIQUE • LUXURY • LAGOS</p>
+</div>
+
 <div class="product">
-<h2 style="font-family:serif;font-size:32px">Essential Collection</h2>
+<h2>Essential Collection</h2>
 <p class="price">₦45,000</p>
-<p style="color:#888;margin:20px">Unisex luxury crafted in Lagos</p>
-<button class="btn btn-outline" onclick="openSizeGuide()">SIZE GUIDE - VIEW CHART</button>
-<button class="btn">SHOP ON WHATSAPP</button>
-</div>
-<div id="sizeGuideModal">
-<div class="modal-box">
-<span class="close" onclick="closeSizeGuide()">&times;</span>
-<img src="ologbo_combined_size_guide.png" style="width:100%" alt="Size Guide">
-</div>
-</div>
-<script>
-function openSizeGuide(){document.getElementById('sizeGuideModal').style.display='block'}
-function closeSizeGuide(){document.getElementById('sizeGuideModal').style.display='none'}
-</script>
-</body>
-</html>
+<p class="desc">Unisex Luxury • Crafted in Lagos • Premium Cotton</p>
+<button class="btn btn-outline" onclick="document.getElementById('sizeGuide').style.display='block'">SIZE GUIDE - VIEW CHART</button>
+<br>
+<button class="btn" onclick="window.open('https://wa.me/
